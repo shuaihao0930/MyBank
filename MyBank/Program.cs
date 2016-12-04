@@ -12,7 +12,7 @@ namespace MyBank
         {
             Console.WriteLine("***************************************");
             Console.WriteLine("Wlcome to my bank!");
-            var choice="-1";
+           
             while (true)
             {
                 Console.WriteLine("Please select from the list of choises");
@@ -31,7 +31,7 @@ namespace MyBank
                         var emailAddress = Console.ReadLine();
                         var checkingAccount = new Account();
                         checkingAccount.EmailAddress = emailAddress;
-                        checkingAccount.AccountType = TypeOfAccounts.Checking; checkingAccount.Deposit(1002.50M);
+                        checkingAccount.AccountType = TypeOfAccounts.Checking; 
                         Console.WriteLine($"Account Number: {checkingAccount.AccountNumber}, Balance: {checkingAccount.Balance:C}");
                         break;
                     default:
